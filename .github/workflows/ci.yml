@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        cache-dependency-path: vibecoders-app/package-lock.json
+
+    - name: Install dependencies
+      run: |
+        cd vibecoders-app
+        npm ci
+
+    - name: Run lint audits
+      run: |
+        cd vibecoders-app
+        npm run lint
+
+    - name: Build production app
+      run: |
+        cd vibecoders-app
+        npm run build
