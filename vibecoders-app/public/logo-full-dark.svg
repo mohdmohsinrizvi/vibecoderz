@@ -1,0 +1,23 @@
+<svg width="400" height="100" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brand-grad" x1="20" y1="20" x2="40" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2E38A6" />
+      <stop offset="100%" stop-color="#706CFF" />
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="80" y1="20" x2="40" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#706CFF" />
+      <stop offset="100%" stop-color="#985AFF" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(15, 10)">
+    <!-- Logo Mark scaled to 80x80 -->
+    <g transform="scale(0.8)">
+      <path d="M 28,22 L 43,22 L 50,76 L 38,76 Z" fill="url(#brand-grad)" />
+      <path d="M 72,22 L 57,22 L 50,76 L 62,76 Z" fill="url(#glow-grad)" />
+      <path d="M 50,24 L 56,30 L 50,36 L 44,30 Z" fill="#FFFFFF" />
+    </g>
+  </g>
+  <!-- Wordmark -->
+  <text x="110" y="52" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="34" letter-spacing="-0.03em">VibeCoderz</text>
+  <text x="110" y="74" fill="#8E8E93" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="11" letter-spacing="0.18em">BUILDER COMMUNITY</text>
+</svg>
