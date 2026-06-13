@@ -5,7 +5,6 @@ import { AuthProvider } from './context/AuthContext'
 import { ThemeProvider } from './context/ThemeContext'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
-import bgImage from './assets/bg.png'
 
 const Home = lazy(() => import('./pages/Home'))
 const Landing = lazy(() => import('./pages/Landing'))
@@ -45,10 +44,7 @@ function App() {
           <BrowserRouter>
             <div className="min-h-dvh flex flex-col bg-bg-base text-text-primary relative overflow-x-hidden">
               {/* Background ambient lighting and pattern grid overlays */}
-              <div 
-                className="absolute inset-0 bg-cover bg-center opacity-[0.02] dark:opacity-[0.06] pointer-events-none -z-10" 
-                style={{ backgroundImage: `url(${bgImage})` }} 
-              />
+              <div className="bg-grain" />
               <div className="absolute inset-0 bg-grid opacity-[0.4] dark:opacity-[0.55] pointer-events-none -z-10" />
               
               {/* Floating ambient glow bubbles */}
