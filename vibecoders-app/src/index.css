@@ -1,35 +1,35 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors - Light Theme */
-  --color-bg-base: #FAF9F6;
-  --color-bg-subtle: #FFFFFF;
-  --color-bg-muted: #F3F2EC;
-  --color-bg-overlay: #E6E5DE;
+  /* Colors - Light Theme (Cool Nordic Slate) */
+  --color-bg-base: #f0f2f8;
+  --color-bg-subtle: #ffffff;
+  --color-bg-muted: #e7eaf2;
+  --color-bg-overlay: #dbe0ee;
 
-  --color-text-primary: #1C1C1E;
-  --color-text-secondary: #4E4E52;
-  --color-text-tertiary: #7E7E84;
-  --color-text-disabled: #A8A8B0;
-  --color-text-inverse: #FFFFFF;
+  --color-text-primary: #0f1629;
+  --color-text-secondary: #334155;
+  --color-text-tertiary: #64748b;
+  --color-text-disabled: #94a3b8;
+  --color-text-inverse: #ffffff;
 
-  --color-border-subtle: #EBEAE3;
-  --color-border-default: #DCDAD0;
-  --color-border-strong: #BCB9AB;
+  --color-border-subtle: #e2e8f0;
+  --color-border-default: #cbd5e1;
+  --color-border-strong: #94a3b8;
 
-  --color-accent: #2E38A6;
-  --color-accent-hover: #1F2574;
-  --color-accent-subtle: #F0F2FF;
-  --color-accent-muted: #CBD2FA;
+  --color-accent: #4338ca;
+  --color-accent-hover: #3730a3;
+  --color-accent-subtle: rgba(67, 56, 202, 0.05);
+  --color-accent-muted: rgba(67, 56, 202, 0.15);
 
   --color-success: #059669;
-  --color-success-subtle: #ECFDF5;
-  --color-error: #DC2626;
-  --color-error-subtle: #FEF2F2;
-  --color-warning: #D97706;
+  --color-success-subtle: rgba(5, 150, 105, 0.05);
+  --color-error: #be123c;
+  --color-error-subtle: rgba(190, 18, 60, 0.05);
+  --color-warning: #d97706;
 
-  --color-like: #2E38A6;
-  --color-dislike: #7E7E84;
+  --color-like: #4338ca;
+  --color-dislike: #64748b;
 
   /* Font families */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
@@ -90,35 +90,36 @@
     min-height: 100dvh;
   }
 
-  /* Dark theme */
+  /* Dark theme (Obsidian Space Navy) */
   [data-theme="dark"] {
-    --color-bg-base: #121214;
-    --color-bg-subtle: #1B1B1E;
-    --color-bg-muted: #242429;
-    --color-bg-overlay: #2C2C32;
+    --color-bg-base: #060713;
+    --color-bg-subtle: #0c0e22;
+    --color-bg-muted: #141733;
+    --color-bg-overlay: #1b1e42;
 
-    --color-text-primary: #EDEDF2;
-    --color-text-secondary: #A1A1A8;
-    --color-text-tertiary: #71717A;
-    --color-text-disabled: #47474E;
-    --color-text-inverse: #121214;
+    --color-text-primary: #f3f4f6;
+    --color-text-secondary: #cbd5e1;
+    --color-text-tertiary: #94a3b8;
+    --color-text-disabled: #475569;
+    --color-text-inverse: #060713;
 
-    --color-border-subtle: #1F1F24;
-    --color-border-default: #2D2D34;
-    --color-border-strong: #45454F;
+    --color-border-subtle: rgba(255, 255, 255, 0.04);
+    --color-border-default: rgba(255, 255, 255, 0.08);
+    --color-border-strong: rgba(255, 255, 255, 0.16);
 
-    --color-accent: #706CFF;
-    --color-accent-hover: #8B87FF;
-    --color-accent-subtle: #19192C;
-    --color-accent-muted: #2E2E50;
+    --color-accent: #4f46e5;
+    --color-accent-hover: #6366f1;
+    --color-accent-subtle: rgba(79, 70, 229, 0.08);
+    --color-accent-muted: rgba(79, 70, 229, 0.2);
 
-    --color-success: #34D399;
-    --color-success-subtle: #0C2016;
-    --color-error: #F87171;
-    --color-error-subtle: #2B1414;
+    --color-success: #10b981;
+    --color-success-subtle: rgba(16, 185, 129, 0.08);
+    --color-error: #e11d48;
+    --color-error-subtle: rgba(225, 29, 72, 0.08);
+    --color-warning: #f59e0b;
 
-    --color-like: #706CFF;
-    --color-dislike: #71717A;
+    --color-like: #4f46e5;
+    --color-dislike: #94a3b8;
   }
 
   /* Focus visible */
