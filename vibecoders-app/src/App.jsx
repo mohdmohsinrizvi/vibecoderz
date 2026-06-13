@@ -44,11 +44,20 @@ function App() {
         <ThemeProvider>
           <BrowserRouter>
             <div className="min-h-dvh flex flex-col bg-bg-base text-text-primary relative overflow-x-hidden">
+              {/* Background ambient lighting and pattern grid overlays */}
               <div 
-                className="absolute inset-0 bg-cover bg-center opacity-[0.03] dark:opacity-[0.08] pointer-events-none -z-10" 
+                className="absolute inset-0 bg-cover bg-center opacity-[0.02] dark:opacity-[0.06] pointer-events-none -z-10" 
                 style={{ backgroundImage: `url(${bgImage})` }} 
               />
+              <div className="absolute inset-0 bg-grid opacity-[0.4] dark:opacity-[0.55] pointer-events-none -z-10" />
+              
+              {/* Floating ambient glow bubbles */}
+              <div className="absolute top-[-120px] left-[-150px] w-[500px] h-[500px] rounded-full bg-accent/8 dark:bg-accent/4 blur-[130px] pointer-events-none -z-20 animate-float-1" />
+              <div className="absolute bottom-[150px] right-[-120px] w-[450px] h-[450px] rounded-full bg-accent-hover/8 dark:bg-accent-hover/4 blur-[130px] pointer-events-none -z-20 animate-float-2" />
+              <div className="absolute top-[20%] left-[60%] w-[350px] h-[350px] rounded-full bg-accent/6 dark:bg-accent/3 blur-[120px] pointer-events-none -z-20 animate-float-1" />
+              
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-[350px] bg-[radial-gradient(ellipse_at_top,var(--color-accent-subtle)_0%,transparent_70%)] opacity-70 pointer-events-none -z-10" />
+              
               <Header />
               <Suspense fallback={<PageLoader />}>
                 <Routes>
